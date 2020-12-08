@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "primary";
+  src: url("fonts/AtlasGrotesk-Light-Web.woff");
+}
+
+/* @font-face {
+  font-family: "primary";
+  src: url("fonts/AtlasGrotesk-Light-Web.woff");
+} */
+
+@font-face {
+  font-family: "secondary";
+  src: url("fonts/PublicoBanner-Light-Web.woff");
+}
+
+@font-face {
+  font-family: "secondary-italic";
+  src: url("fonts/PublicoBanner-LightItalic-Web.woff");
+}
+
+body {
+  background-color: #ece6e3;
+}
+
+.primary-font {
+  font-family: "primary";
+  color: #333;
+  font-weight: 900;
+}
+
+.secondary-font {
+  font-family: "secondary";
+  color: #000;
+}
+
+.secondary-italic-font {
+  font-family: "secondary-italic";
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.navbar .logo {
+  align-items: flex-start;
+  width: 200px;
+}
+
+.navbar ul {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 0 0 0 60px;
+  margin-bottom: 20px;
+}
+
+.tagline-row {
+  display: flex;
+  margin-top: 110px;
+}
+
+.tagline-spacer {
+  width: 10vw;
+}
+
+.tagline {
+  font-size: 110px;  
+  padding-right: 30px;
+  /* margin: 0 0 0 200px; */
+  flex-grow: 7;
+}
+
+.description {
+  border-left: 1px gray solid;
+  padding-left: 30px;
+  flex-grow: 2;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.call-to-action {
+  margin: 150px 0 0 9vw;
+  padding: 20px;
+  background-color: white;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 30px;
+}
+
