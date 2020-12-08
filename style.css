@@ -22,6 +22,15 @@ body {
   background-color: #ece6e3;
 }
 
+.email {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
 .primary-font {
   font-family: "primary";
   color: #333;
