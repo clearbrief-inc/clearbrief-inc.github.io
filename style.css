@@ -3,11 +3,6 @@
   src: url("fonts/AtlasGrotesk-Light-Web.woff");
 }
 
-/* @font-face {
-  font-family: "primary";
-  src: url("fonts/AtlasGrotesk-Light-Web.woff");
-} */
-
 @font-face {
   font-family: "secondary";
   src: url("fonts/PublicoBanner-Light-Web.woff");
@@ -18,17 +13,39 @@
   src: url("fonts/PublicoBanner-LightItalic-Web.woff");
 }
 
-body {
-  background-color: #ece6e3;
+html {
+  font-size: 62.5%;
 }
 
-.email {
-  text-align: center;
+body {
+  background-color: #ece6e3;
+  margin: 0;
+  padding: 0;
+}
+
+body.contact-body {
+  background-color: #333;
 }
 
 a {
   text-decoration: none;
-  color: initial;
+  color: inherit;
+}
+
+.linkedin {
+  color: #0072b1;
+}
+
+.linkedin:hover {
+  color: #fff;
+}
+
+.twitter {
+  color: #1DA1F2;
+}
+
+.twitter:hover {
+  color: #fff;
 }
 
 .primary-font {
@@ -51,7 +68,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 40px;
+  padding: 40px;
+  background-color: #ece6e3;
+  margin: 0;
 }
 
 .navbar .logo {
@@ -71,6 +90,8 @@ a {
 .navbar li {
   padding: 0 0 0 60px;
   margin-bottom: 20px;
+  white-space: nowrap;
+  font-size: 1.5rem;
 }
 
 .tagline-row {
@@ -83,7 +104,7 @@ a {
 }
 
 .tagline {
-  font-size: 110px;  
+  font-size: 9rem;
   padding-right: 30px;
   /* margin: 0 0 0 200px; */
   flex-grow: 7;
@@ -93,21 +114,141 @@ a {
   border-left: 1px gray solid;
   padding-left: 30px;
   flex-grow: 2;
-  font-size: large;
+  font-size: 2rem;
   font-weight: bolder;
 }
 
 .call-to-action {
+  border-radius: 5px;
+  font-size: 2rem;
   margin: 150px 0 0 9vw;
-  padding: 20px;
+  padding: 10px 22px;
   background-color: white;
-  width: 30vw;
+  width: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .arrow {
-  font-size: 30px;
+  align-self: center;
+  font-size: 3.5rem;
 }
 
+.form-wrapper {
+  margin: 50px;
+}
+
+/* CONTACT PAGE */
+
+.contact-box {
+  background-color: #333;
+  color: white;
+  position: relative;
+  margin: 50px 0 0 50px;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.email {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.social-row {
+  color: #fff;
+}
+
+.address {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    position: static !important;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .tagline-row {
+    margin-top: 60px;
+  }
+  .contact-box {
+    width: 80%;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  .navbar ul {
+    margin: 0;
+  }
+  .navbar ul li {
+    padding: 10px;
+  }
+  .navbar {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .tagline {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .call-to-action {
+    width: 80vw;
+    margin: 50px auto 0 auto;
+  }
+  .navbar {
+    padding: 10px;
+  }
+  .navbar .logo {
+    align-self: flex-start;
+    width: 100px;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .call-to-action {
+    margin-top: 150px;
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+  .tagline {
+    font-size: 4rem;
+  }
+  .contact-box {
+    width: 250;
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar ul li {
+    padding: 5px;
+  }
+  .description {
+    padding-left: 10px;
+  }
+  .social-row {
+    bottom: 10px;
+    top: auto;
+  }
+  .form-wrapper {
+    margin: 10px;
+  }
+}
