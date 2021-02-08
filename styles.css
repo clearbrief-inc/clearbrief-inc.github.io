@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "primary-bold";
+  src: url("fonts/AtlasGrotesk-Medium-Web.woff");
+}
+
+@font-face {
   font-family: "secondary";
   src: url("fonts/PublicoBanner-Light-Web.woff");
 }
@@ -13,13 +18,39 @@
   src: url("fonts/PublicoBanner-LightItalic-Web.woff");
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
+html, body {
+  height: 100%;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: primary;
+}
+
+h1 {
+  font-family: primary;
+  /* font-size: 2.5rem !important; */
+}
+
+.font-bold {
+  font-family: primary-bold !important;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+  display: block;
+  text-align: right;
+}
+
 .footer a {
   font-family: primary;
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   color: rgb(108, 108, 205);
@@ -37,6 +68,11 @@ body {
   background-color: #ece6e3;
   margin: 0;
   padding: 0;
+}
+
+.blog-title {
+  font-size: 6rem;
+  line-height: 5rem;
 }
 
 body.contact-body {
@@ -64,6 +100,11 @@ a {
   color: #fff;
 }
 
+.article-item {
+  width: 300px !important;
+  height: 600px !important;
+}
+
 .primary-font {
   font-family: "primary";
   color: #333;
@@ -71,7 +112,7 @@ a {
 }
 
 .secondary-font {
-  font-family: "secondary";
+  font-family: "secondary" !important;
   color: #000;
 }
 
@@ -243,6 +284,7 @@ a {
 }
 
 @media only screen and (max-width: 540px) {
+
   .call-to-action {
     margin-top: 150px;
     font-size: 1.5rem;
@@ -260,6 +302,10 @@ a {
 }
 
 @media only screen and (max-width: 400px) {
+
+  .blog-title {
+    font-size: 5rem;
+  }
   .navbar ul li {
     padding: 5px;
   }

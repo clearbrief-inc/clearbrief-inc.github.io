@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- favicons end-->
+
+    <meta charset="utf-8" />
+    <title>ClearBrief Blog - Begin Anywhere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="The ClearBrief home page" />
+    <meta name="author" content="The ClearBrief team" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img
+        class="logo"
+        src="./images/logo-transparent.svg"
+        onerror="this.onerror=null; this.src='image.png'"
+      />
+      <ul class="primary-font">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./signup.html">Sign Up</a></li>
+        <li><a class="font-bold" href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="flex justify-center">
+      <img
+        src="./images/evidence_faceoff.png"
+        alt="begin_anywhere"
+        class="bg-gray-400"
+        style="height: 30rem"
+      />
+    </div>
+    <div class="mt-8 mb-10 mx-10">
+      <h1 class="text-center text-black mb-10 secondary-font blog-title">
+        Evidence Faceoff: Parler vs. AWS
+      </h1>
+      <!-- <h3 class="text-center text-3xl md:text-5xl lg:mx-28 md:mx-5 mb-3 text-gray-600 primary-font ">
+        This is the first in a series of regular posts where I’ll dive into an
+        interesting opinion to understand which facts and sources of evidence
+        had the most impact on the judge’s ruling.
+      </h3> -->
+    </div>
+
+    <section
+      class="leading-relaxed lg:mx-96 sm:mx-10 text-black:100 text-3xl lg:text-3xl"
+    >
+      <div class="primary-font rounded-md overflow-hidden">
+        <div class="flex items-center px-4 py-2 md:py-4">
+          <img
+            src="./images/jacqueline_schafer.jpg"
+            class="mx-4 pr-0 lg:h-24 h-32 rounded-full"
+            alt="Author's Face"
+          />
+          <div class="ml-0 text-left">
+            <p class="text-4xl">By Jacqueline Schafer</p>
+            <div class="">
+              <a
+                class="linkedin"
+                target="_blank"
+                href="https://www.linkedin.com/company/clearbrief/"
+                ><i class="lab la-2x la-linkedin-in"></i
+              ></a>
+              <a
+                class="twitter"
+                target="_blank"
+                href="https://twitter.com/ClearBriefai"
+                ><i class="lab la-2x la-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="p-4 leading-relaxed font-bold">
+        This is the first in a series of regular posts where I’ll dive into an
+        interesting opinion to understand which facts and sources of evidence
+        had the most impact on the judge’s ruling.
+      </p>
+
+      <p class="p-4 leading-relaxed">
+        
+        First up, it’s the recent Parler v. AWS matter, where Parler sued Amazon
+        for refusing to continue to host the right-wing social media platform on
+        AWS, after Parler users made thousands of shockingly violent posts after
+        the January 6 Capitol insurrection. The Seattle Times had a nice
+        <a
+          class="text-blue-500 transition hover:text-white"
+          target="_blank"
+          href="https://www.seattletimes.com/business/amazon/amazon-can-keep-parler-offline-court-rules/"
+          >summary</a
+        >
+        of the lawsuit and the hearing that preceded the order we’re about to
+        unpack. But while the press focuses on the first amendment-y aspects of
+        the case, Parler’s loss came down to the fact that they relied on
+        dramatic allegations instead of cold, hard facts.
+      </p>
+      <p class="p-4 leading-relaxed">
+        Parler sued Amazon seeking a preliminary injunction that would force AWS
+        to put Parler back online, ASAP. (For the non-lawyers in the house: a
+        preliminary injunction means that Parler needed to prove to the court
+        that it was decently likely to win on the merits once the case
+        progressed further, so that the court should basically just give them
+        what they want now without having to wait for the end of the lawsuit.)
+      </p>
+      <p class="p-4 leading-relaxed">
+        First Up: The Sherman Act (Antitrust) claim:
+        <br />
+        Parler tried to argue the antitrust equivalent of “but mom, you let him
+        do it!” Parler was claiming that Amazon allowed Twitter to get away with
+        hosting similar violent content, and that Amazon’s actions with Parler
+        were part of a nefarious plot to help Twitter succeed.
+      </p>
+      <p class="p-4 leading-relaxed">Evidence faceoff:</p>
+      <p class="p-4 leading-relaxed">
+        •&nbsp;&nbsp;&nbsp;&nbsp;Parler didn’t submit any factual evidence that
+        Amazon and Twitter conspired to get Parler out of the way in order to
+        reduce Twitter’s competition. Womp womp.
+      </p>
+      <p class="p-4 leading-relaxed">
+        •&nbsp;&nbsp;&nbsp;&nbsp;Meanwhile, Amazon submitted a sworn declaration
+        by a high ranking Amazon executive who explicitly denied that Amazon and
+        Twitter ever had a single conversation about Parler, and noted that to
+        do so would violate Amazon’s policies of never sharing one customer’s
+        information with another. He also emphasized his powerful executive role
+        and said he never authorized anyone on his team to have this kind of
+        conversation, so therefore it couldn’t have happened.
+      </p>
+      <p class="p-4 leading-relaxed">
+        •&nbsp;&nbsp;&nbsp;&nbsp;Also, Amazon dunked on Parler with its evidence
+        showing that technically, it didn’t even host Twitter yet. An executive
+        stated in a declaration that the agreement to work with Twitter was
+        signed in Dec 2020, but Twitter’s feed wasn’t yet on AWS. Amazon used
+        this fact to argue that it didn’t even make sense to compare their
+        relationship with Twitter.
+      </p>
+
+      <p class="p-4 leading-relaxed">
+        Takeaways: Amazon had to prove a negative here–that they never discussed
+        something internally. That’s a tough thing to prove when extensive
+        discovery hasn’t yet occurred. They decided the quickest way to “prove”
+        this was to have an exec explain the internal policy against discussing
+        customer data, and swear that since he didn’t personally have or
+        authorize anyone else to have convos with Twitter, it must not have
+        happened. Is this airtight evidence? Nope. But since Parler submitted
+        nothing, the court held it was good enough.
+      </p>
+
+      <p class="p-4 leading-relaxed">
+        The argument about Twitter’s feed not yet being on AWS is a great
+        example of using a technical piece of evidence to help the judge zoom
+        out and see the practical realities of Amazon’s position. Amazon is
+        explaining that while it has to take responsibility for content it hosts
+        on its platform, Twitter isn’t up there just yet. At this particular
+        moment in time, Parler is a (rotten) apple, while Twitter is an orange.
+        Interestingly, having made this argument, once Twitter’s feed is live on
+        AWS, Amazon better be able to show evidence that it’s treating Twitter
+        the same re: shutting them down for failure to moderate violent content.
+      </p>
+      <p class="p-4 leading-relaxed">Next up: The Contract claim:</p>
+      <p class="p-4 leading-relaxed">Evidence Faceoff:</p>
+      <p class="p-4 leading-relaxed">
+        •&nbsp;&nbsp;&nbsp;&nbsp;Amazon and Parler each claim that the other
+        company violated the terms of the AWS contract. The judge’s ruling here
+        came down to one simple fact–that Parler simply didn’t deny Amazon’s
+        argument that Parler’s content violated the agreement.
+      </p>
+      <p class="p-4 leading-relaxed">
+        •&nbsp;&nbsp;&nbsp;&nbsp;Parler tried to focus on a contract
+        technicality, that Amazon needed to notify them and give them 30 days to
+        fix any issues with the violent hate speech.
+      </p>
+      <p class="p-4 leading-relaxed">
+        •&nbsp;&nbsp;&nbsp;&nbsp;But the judge wasn’t hearing it because Parler
+        didn’t even bother to argue or submit evidence showing that the violent
+        content wasn’t in violation.
+      </p>
+      <p class="p-4 leading-relaxed">
+        Takeaway: Again, Parler whiffed it by simply not providing any evidence
+        to contradict Amazon’s argument about the content violating the
+        contract. Amazon’s strategy was simple and powerful–show the court
+        examples of the horrific, violent content Parler allowed on its
+        platform. How could Parler have engaged more with this evidence? Perhaps
+        they could have at least tried to analyze for the court a selection of
+        the troubling posts, highlight any gray areas in whether they should be
+        removed, and give a specific discussion of the timeline of how and when
+        such posts would have been taken down. And as a side note, I wonder
+        whether their counsel didn’t want to be seen as supporting violent
+        extremists by making this argument and implicitly debating the merits of
+        these violent posts.
+      </p>
+
+      <p class="p-4 leading-relaxed">
+        It all added up to a lack of facts in the record that would support a
+        court forcing Amazon to host this violent content. This opinion is a
+        pretty classic example of why litigants need to give the court something
+        substantive to back up their lofty arguments, like documents or
+        declarations with sworn testimony. This is especially important when
+        seeking a preliminary injunction (which has a seriously high bar before
+        a judge will grant one–the case hasn’t run the usual course yet).
+      </p>
+
+      <p class="p-4 leading-relaxed">
+        And the case also shows that before discovery, when the parties can’t
+        supply the court with lots of emails and texts they found to support
+        their claims, a tightly worded declaration by a company executive can be
+        pretty powerful evidence.
+      </p>
+
+      <p class="p-4 leading-relaxed">
+        For more litigation nerd content, and to see a delightful selection of
+        lawyerly memes, you’re invited to join our private community group at
+        <a href="https://www.facebook.com/groups/letsbebrief"
+          >facebook.com/groups/letsbebrief.</a
+        >
+      </p>
+
+      <br />
+      <hr />
+
+      <div class="bg-white rounded-md md:overflow-hidden">
+        <div class="flex sm:items-center px-6 py-4">
+          <img
+            src="./images/jacqueline_schafer.jpg"
+            class="block mx-auto sm:mx-0 sm:flex-shrink-0 h-40 lg:24 rounded-full"
+            alt="Author's Picture"
+          />
+          <div class="mt-4 sm:mt-0 sm:ml-4 text-center md:text-left">
+            <p class="text-5xl leading-tight p-1 primary-font">
+              Jacqueline Schafer
+            </p>
+            <p class="text-3xl leading-tight text-gray-600">
+              Former Paul Weiss litigator, Assistant Attorney General, and
+              nonprofit counsel. Founder and CEO of Clearbrief. Always humming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <a target="_blank" href="./privacy_policy.html">Privacy Policy</a>
+    </div>
+  </body>
+</html>
