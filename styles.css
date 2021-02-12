@@ -26,6 +26,10 @@ body {
   flex-direction: column;
 }
 
+main {
+  flex: 1 0 auto;
+}
+
 p {
   font-family: primary;
 }
@@ -46,6 +50,7 @@ h1 {
   flex-shrink: 0;
   display: block;
   text-align: right;
+  padding-bottom: 10px;
 }
 
 .footer a {
