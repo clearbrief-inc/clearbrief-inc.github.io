@@ -49,7 +49,7 @@ h1 {
 .footer {
   flex-shrink: 0;
   display: block;
-  text-align: right;
+  text-align: center;
   padding-bottom: 10px;
 }
 
